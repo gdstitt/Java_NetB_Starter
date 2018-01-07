@@ -35,6 +35,8 @@ public class Java_NetB_Starter {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("HelloWorld");
+        System.out.println("Just desperately seeking excuses for commits");
     }
 
 }
