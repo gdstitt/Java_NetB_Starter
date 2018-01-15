@@ -5,6 +5,8 @@
 package java_netb_starter;
 
 import java.lang.annotation.Documented;
+import java.awt.Dimension;
+import javax.swing.JFrame;
 
 @Documented
 @interface ClassPreamble {
@@ -41,6 +43,12 @@ public class Java_NetB_Starter {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("HelloWorld");
+        Appframe frame = new Appframe("HelloWorld App");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(new Dimension(700, 400));
+        frame.setVisible(true);
+        
+        
     }
 
 }
