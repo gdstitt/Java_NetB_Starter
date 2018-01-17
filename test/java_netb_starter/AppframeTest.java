@@ -10,6 +10,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.Ignore;
 import static org.junit.Assert.*;
 
 /**
@@ -37,6 +38,7 @@ public class AppframeTest {
     public void tearDown() {
     }
 
+    @Ignore ("Not ready yet")
     @Test
     public void testSomeMethod() {
         // TODO review the generated test code and remove the default call to fail.
