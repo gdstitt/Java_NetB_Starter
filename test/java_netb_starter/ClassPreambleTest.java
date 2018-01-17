@@ -23,22 +23,27 @@ import java.lang.annotation.Annotation;
 public class ClassPreambleTest {
 
     public ClassPreambleTest() {
+        System.out.println("ClassPreambleTest::constructor()\n");
     }
 
     @BeforeClass
     public static void setUpClass() {
+        System.out.println("ClassPreambleTest::setUpClass\n");
     }
 
     @AfterClass
     public static void tearDownClass() {
+        System.out.println("ClassPreambleTest::tearDownClass\n");
     }
 
     @Before
     public void setUp() {
+        System.out.println("ClassPreambleTest::setUp\n");
     }
 
     @After
     public void tearDown() {
+        System.out.println("ClassPreambleTest::tearDown\n");
     }
 
     /**
@@ -48,7 +53,7 @@ public class ClassPreambleTest {
     public void testAuthor() {
         System.out.println("author");
         ClassPreamble instance = new ClassPreambleImpl();
-        String expResult = "";
+        String expResult = "?";
         String result = instance.author();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
@@ -62,7 +67,7 @@ public class ClassPreambleTest {
     public void testDate() {
         System.out.println("date");
         ClassPreamble instance = new ClassPreambleImpl();
-        String expResult = "";
+        String expResult = "???XXX???";
         String result = instance.date();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
